@@ -13,5 +13,5 @@ class Pessoa:
     def listar(self):
         return self.nome, self.endereco, self.rg, self.cpf  
 
-    def herança(self):
+    def heranca(self):
         return "Testando a herança..."      
