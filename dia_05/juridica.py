@@ -6,4 +6,14 @@ class Juridica(Pessoa):
         self.cnpj = cnpj
         self.nome_fantasia = nome_fantasia
 
-# Exercício: Herdar de pessoa 
+    def __rep__(self):
+        return f'Nome fantasia: {self.nome_fantasia}'
+
+    def listar(self):
+        return f"cnpj: {self.cnpj}, Nome fantasia: {self.nome_fantasia}"
+
+    def set_cnpj(self, value):
+        self.cnpj = value
+
+    def set_nome_fantasia(self, value):
+        self.nome_fantasia = value
